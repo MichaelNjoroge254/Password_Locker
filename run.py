@@ -132,6 +132,10 @@ def main():
                             if log_in==0:
                                 print("\n")
                                 print("Invalid username and/or password")
+                                password==0:
+                                print("/n")
+                                print("password does not match!")
+
                                 print("-"*25)
                             elif log_in!=0:
                                 print("\n")
