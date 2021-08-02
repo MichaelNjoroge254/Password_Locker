@@ -58,13 +58,13 @@ class UserData:
 
     def create_password(self):
         '''
-        creates a passord and acc name
+        creates a password and acc name
         '''
         return UserData.user_data_list.append(self)
 
     def confirm_password(self):
         '''
-        confirm a passord and acc name
+        confirm a password and acc name
         '''
         return UserData.user_data_list.append(self)    
 
