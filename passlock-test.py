@@ -71,7 +71,7 @@ class TestUserData(unittest.TestCase):
         Test for test case initialization"
         '''
         self.assertEqual(self.new_user_data.acc_name, "instagram")
-        self.assertEqual(self.new_user_data.acc_username, "michael")
+        self.assertEqual(self.new_user_data.acc_username, "Michael")
         self.assertEqual(self.new_user_data.acc_password, "pass")
 
     def test_add_password(self):
