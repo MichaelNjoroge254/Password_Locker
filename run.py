@@ -116,7 +116,7 @@ def main():
 
                             print("confirm password ...")
                             password = input()
-                            save_creds(create_creds(uname,password,password)) # create and save credentials
+                            save_creds(create_creds(uname,password)) # create and save credentials
                             print ('\n')
                             print(f"Your new account with username : '{uname}' and password '{password}' has been successfully created")
                             print ('\n')
@@ -131,10 +131,7 @@ def main():
                             log_in = authenticate_creds(uname, passwrd)
                             if log_in==0:
                                 print("\n")
-                                print("Invalid username and/or password")
-                                password==0:
-                                print("/n")
-                                print("password does not match!")
+                                print("Invalid username and/or password")             
 
                                 print("-"*25)
                             elif log_in!=0:
