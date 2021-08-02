@@ -55,7 +55,7 @@ class TestUserData(unittest.TestCase):
         '''
         set up structure before every test
         '''
-        self.new_user_data = UserData("facebook","michael","pass")
+        self.new_user_data = UserData("instagram","michael","pass")
 
 
     def tearDown(self):
@@ -70,7 +70,7 @@ class TestUserData(unittest.TestCase):
         '''
         Test for test case initialization"
         '''
-        self.assertEqual(self.new_user_data.acc_name, "facebook")
+        self.assertEqual(self.new_user_data.acc_name, "instagram")
         self.assertEqual(self.new_user_data.acc_username, "michael")
         self.assertEqual(self.new_user_data.acc_password, "pass")
 
@@ -81,6 +81,13 @@ class TestUserData(unittest.TestCase):
         self.new_user_data.create_password()
         self.assertEqual(len(UserData.user_data_list),1)
 
+    def test_confirm_password(self):
+        '''
+        Testing if the new website and password can be saved
+        '''
+        self.new_user_data.confirm_password()
+        self.assertEqual(len(UserData.user_data_list),1)    
+
 
 
     def test_show_data(self):
@@ -88,7 +95,7 @@ class TestUserData(unittest.TestCase):
         Testing if the data can be displayed.
         '''
         self.new_user_data.create_password()
-        test_this = UserData("twitter","Mikee", "pass")
+        test_this = UserData("twitter","Mike", "pass")
         test_this.create_password()
 
         found_user_data = UserData.show_user_data("twitter")
