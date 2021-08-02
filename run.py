@@ -113,9 +113,10 @@ def main():
 
                             print("password ...")
                             password = input()
+
                             print("confirm password ...")
                             password = input()
-                            save_creds(create_creds(uname,password)) # create and save credentials
+                            save_creds(create_creds(uname,password,password)) # create and save credentials
                             print ('\n')
                             print(f"Your new account with username : '{uname}' and password '{password}' has been successfully created")
                             print ('\n')
