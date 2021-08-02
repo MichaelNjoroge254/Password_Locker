@@ -56,12 +56,12 @@ def show_data():
 
 
 
-# def copy_password(acc_name):
-#     '''
-#     function to copy password to the clipboard
-#     '''
-#     my_password = UserData.show_user_data(acc_name)
-#     pyperclip.copy(my_password.acc_password)
+def copy_password(acc_name):
+    '''
+    function to copy password to the clipboard
+    '''
+    my_password = UserData.show_user_data(acc_name)
+    pyperclip.copy(my_password.acc_password)
 
 def data_exist(acc_name):
     '''
@@ -124,6 +124,7 @@ def main():
                             print("-"*50)
                             uname = input("Username: ")
                             passwrd = input("Password: ")
+                            passwrd = input("confirm Password: ")
                             log_in = authenticate_creds(uname, passwrd)
                             if log_in==0:
                                 print("\n")
