@@ -62,6 +62,12 @@ class UserData:
         '''
         return UserData.user_data_list.append(self)
 
+    def confirm_password(self):
+        '''
+        confirm a passord and acc name
+        '''
+        return UserData.user_data_list.append(self)    
+
 
     @classmethod
     def show_user_data(cls):
